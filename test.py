@@ -1,12 +1,13 @@
 import main
 n = 0
 for loop in range (0,4):
-  start = input(f"\033[91mDo you want to start the game?  Type 'YES' to start\033[0m")
+  start = input(f"\033[91mDo you want to start the game?  Type 'YES' to start: \033[0m")
   if start == "YES":
     print("START!!!")
     break
   elif (n == 3):
-    print(f"\033[91mDUMB\033[0m")
+    print(f"\033[91mYou are so dumb, let me help you LOL\033[0m")
+    print(f"\033[1mYES\033[0m")
     break
   else:
     n = n + 1  

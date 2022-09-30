@@ -1,0 +1,26 @@
+import random
+import array as arr
+
+
+HP = 20
+ST = 1
+DP = 0 #防御力
+I = arr.array('d', [HP, ST, DP])
+Hp = 20
+St = 1
+Dp = 0
+Monster = arr.array('d', [Hp, St, Dp])
+while (Monster[0] >= 0)&(I[0]>=0):
+    r = random.randint(1,6)
+    Monster[0] = Monster[0]-r
+    print("I", I[0], r)
+    r1 = random.randint(1,6)
+    I[0] = I[0] - r1
+    print("M",Monster[0], r1)
+    if I[0] <= 0:
+        print("Human win!!!")
+        print(I[0])
+    elif Monster[0] <= 0:
+        print("Monster win!!! You lose!!!")
+        print(Monster[0])
+        

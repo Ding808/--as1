@@ -1,6 +1,6 @@
 import main
-n = 0
-for loop in range (0,4):
+n = 1
+for loop in range (0,3):
   start = input(f"\033[91mDo you want to start the game?  Type 'YES' to start: \033[0m")
   if start == "YES":
     print("START!!!")

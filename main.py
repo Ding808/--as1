@@ -3,14 +3,26 @@ import array as arr
 
 class First:
   def show(self):
+    initaHp = 5
+    initaSt = 2
+    initaDp = 1
+    initbHp = 10
+    initbSt = 1
+    initbDp = 1
     Hp = 5
     St = 0
     Dp = 0
     i = 1
     break0 = 0
-    HP = 20
-    ST = 2
-    DP = 1
+    roll = input(f"\033[95mDo you want to be 'a' or 'b' \033[0m")
+    if (roll == "a"):
+      HP = initaHp
+      ST = initaSt
+      DP = initaDp
+    elif (roll == "b"):
+      HP = initbHp
+      ST = initbSt
+      DP = initbDp
     while True:
       Hp *= 2
       St = St + 1
@@ -64,9 +76,15 @@ class First:
               St = 0
               Dp = 0
               i = 1
-              HP = 20
-              ST = 2
-              DP = 1
+              roll = input(f"\033[95mDo you want to be 'a' or 'b' \033[0m")
+              if (roll == "a"):
+                HP = initaHp
+                ST = initaSt
+                DP = initaDp
+              elif (roll == "b"):
+                HP = initbHp
+                ST = initbSt
+                DP = initbDp
             else:
               break0 = 1
               break
@@ -74,7 +92,7 @@ class First:
         print(f"\033[1mSee you when you are ready~ \033[0m")
         break
       if (i == 4):
-        second = input("Do you want to move to the next round?")
+        second = input(f"\033[93mDo you want to move to the next round?\033[0m")
         if second == "YES":
           Hp *= 1.5
           St *= 1.5

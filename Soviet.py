@@ -19,3 +19,6 @@ class soviet:
             ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
             ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░\033[0m"""
         return sovieT
+initbHp = 15
+initbSt = 1
+initbDp = 2

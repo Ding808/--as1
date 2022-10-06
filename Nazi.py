@@ -20,3 +20,6 @@ class nazi:
         ░░░░░░░░░░░░░░░▀█▀░░░░░░░░░░░░░░░
         \033[0m"""
         return nazI
+initaHp = 5
+initaSt = 2
+initaDp = 1

@@ -22,3 +22,5 @@ class soviet:
 initbHp = 15
 initbSt = 1
 initbDp = 2
+
+

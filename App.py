@@ -2,7 +2,7 @@ import Game
 import sys,time,os
 from method import *
 import Game
-
+import random
 
 #print two countries's flag
 image = sidebyside()

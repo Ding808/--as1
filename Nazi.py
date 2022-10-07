@@ -23,3 +23,4 @@ class nazi:
 initaHp = 5
 initaSt = 2
 initaDp = 1
+

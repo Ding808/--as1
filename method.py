@@ -46,3 +46,4 @@ def texttime(words):
         sys.stdout.write(c)
         sys.stdout.flush()
         time.sleep(0.005)
+

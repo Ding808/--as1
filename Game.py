@@ -10,12 +10,15 @@ from Soviet import *
 
 a1 = Nazi.nazi()
 b1 = Soviet.soviet()
+#the clear method that can clear all the text
 def clear():
   _ = system('clear')
+
 class Start:
   def start(self):
     #Starting program to force player say yes
     n = 1
+    #Beginning program
     for loop in range (0,3):
       start = input(f"\033[91m\033[1mDo you want to start the game?  Type 'YES' to start: \033[0m")
       if start == "YES":
@@ -34,8 +37,6 @@ class Start:
 
 class First:
   def show(self):
-    #make the init number of HP ST and DP
-
     #Hp, St and Dp is the init data of the monster
     Hp = 5
     St = 0
@@ -69,6 +70,7 @@ class First:
       #Make my data and monster data to an array
       I = arr.array('d', [HP, ST, DP])
       Monster = arr.array('d', [Hp, St, Dp])
+      #When you say the wrong slogan of Nazi you lose
       if (slogan == "MY FUHRER")and(role == "NAZI"):
         texttime(a1.n())
         print("")
@@ -203,6 +205,7 @@ class First:
           i = 1
           break0 = 0
           clear()
+          #Prize when you win the first round
           print(f"\033[92m\033[1mWOW, you successfully intercepted the souvenir from enemy!!! It's a model tank!!!\033[0m")
           texttime(f"""\033[96m
                 ███████l▄▄▄▄▄▄▄▄▃  
